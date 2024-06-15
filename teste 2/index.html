@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina do jogo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: #E8D99C; /* Alteração da cor de fundo aqui */
+            color: black; /* Alteração da cor do texto para preto */
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto; /* Coloca o rodapé no final da página */
+            font-family: 'Noto Sans', Arial, sans-serif; /* Definindo a fonte Noto Sans */
+        }
+
+        .footer__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Corrigido */
+            gap: 10px;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin-top: 20px;
+        }
+
+        .footer-logo img {
+            max-width: 100px;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: lightgray;
+        }
+
+        .footer__text {
+            font-size: 0.9rem;
+            margin-top: 1px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-item {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 2px solid #E8C32E;
+            transition: border-color 0.3s;
+        }
+
+        .contact-item a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact-item:hover {
+            border-color: #333;
+        }
+
+        .contact-item a:hover {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        <div class="content">
+            <section class="section">
+                <h2>Desenvolvido Por:</h2>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <a href="front.html">Trilha Front-end</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="back.html">Trilha Back-end</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="jogos.html">Trilha Jogos</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="design.html">Trilha UX Design</a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="dados.html">Trilha de Dados</a>
+                    </div>
+                </div>
+                <!-- Incluir a imagem logo abaixo da lista de contatos -->
+                <div class="footer-logo">
+                    <img src="inovaa.png" alt="Logo">
+                </div>
+            </section>
+        </div>
+        <div class="footer__text">
+            <p>&copy; 2024 Inova Maranhão. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
